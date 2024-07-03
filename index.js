@@ -5,7 +5,8 @@ const app = express();
 const port = 3000; // Replace with your desired port number
 
 app.use(express.json());
-
+app.get("/", (req, res) =>
+  res.send("Welcome to the api!"))
 // Route to create a file with current date and time
 app.get("/createFile", (req, res) => {
   const now = new Date();

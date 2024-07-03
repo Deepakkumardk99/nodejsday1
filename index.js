@@ -2,7 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-const port = 10000; // Replace with your desired port number
+const port = 3000; // Replace with your desired port number
 
 app.use(express.json());
 

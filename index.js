@@ -2,8 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-const port = 3000; // Replace with your desired port number
-
+//const port = 3000; // Replace with your desired port number
+require("dotenv").config();
+// console.log(process.env);
+const port=process.env.PORT 
 app.use(express.json());
 app.get("/", (req, res) =>
   res.send("Welcome to the api!"))
